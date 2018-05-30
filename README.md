@@ -5,6 +5,8 @@ Backing up a linux system to Dropbox can be a challenge becuase the easy backup 
 # Basic Idea
 Script creates a collection of tar files of the system in the dropbox folder owned by the dropbox user.  Tar is chosen to preserve the original owner/group for the file/directories.  The script manages backup expiration.
 # PseudoCode
+```
 su DropboxUser touch systemBackup-$Date
 backup system > systemBackup-$Date
 expire old backups
+```
